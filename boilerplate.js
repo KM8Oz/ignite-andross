@@ -116,7 +116,7 @@ async function install(context) {
   const newPackageJson = JSON.parse(rawJson)
 
   // read in the react-native created package.json
-  const currentPackage = filesystem.read('package.json', 'json')
+  const currentPackage = filesystem.read('./package.json', 'json')
 
   // deep merge, lol
   const newPackage = pipe(
